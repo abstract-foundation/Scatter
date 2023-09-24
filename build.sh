@@ -7,11 +7,6 @@ do
     esac
 done
 
-if [ "$network" = "Mainnet" ] || [ "$network" = "mainnet" ]; then
-    go build cmd/mainnet/main.go
-    ./main
-fi
-if [ "$network" = "Devnet" ] || [ "$network" = "devnet" ]; then
-    go build cmd/devnet/main.go
-    ./main
+if [ "`go build cmd/$network/main.go`" = "" ]; then
+    time ./main
 fi
