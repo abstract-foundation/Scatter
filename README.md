@@ -7,3 +7,9 @@ XRV is esigned to be the "gas" token of the Rivative Network. There is no limite
 # Key Features of the Rivative Network
 - Allows users to create complex decentralized applications at low costs.
 - Allows users to create custom ledgers without the need of starting their own network.
+
+## Repository Structure
+- `main` Will store the newest version of the Rivative Network that is currently running.
+- `devnet` Will store the current version of the Devnet Rivative Network.
+- `rvs-0` (Can be any rvs version) Will store the code for the named rvs proposal. (Proposals which are accepted)
+- `rvs-0b` (Can be any rvs version) Will store the code for in development proposals. (Proposals which are not yet accepted)
